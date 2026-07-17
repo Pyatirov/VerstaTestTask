@@ -1,0 +1,18 @@
+table {
+    border: 1px solid var(--text-h);
+}
+thead tr {
+    border-bottom: 2px solid var(--text-h)
+}
+
+tr th{
+    font-weight: 700;
+}
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: rgb(175,175,175);
+}

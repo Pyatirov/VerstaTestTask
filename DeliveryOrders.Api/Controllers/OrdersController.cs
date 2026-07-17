@@ -22,7 +22,7 @@ public class OrdersController : ControllerBase
     public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
     {
         var orders = await _context.Orders
-            .OrderByDescending(o => o.CreatedAt)
+            .OrderByDescending(o => o.Id)
             .ToListAsync();
 
         return Ok(orders);
@@ -54,7 +54,7 @@ public class OrdersController : ControllerBase
             ReceiverAddress = dto.ReceiverAddress,
             Weight = dto.Weight,
             PickupDate = dto.PickupDate,
-            CreatedAt = DateTime.UtcNow,
+            CreatedAt = DateTimeOffset.UtcNow,
         };
 
         _context.Orders.Add(order);

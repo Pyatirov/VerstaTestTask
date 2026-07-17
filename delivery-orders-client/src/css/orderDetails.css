@@ -1,0 +1,34 @@
+.order-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    min-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+
+    background: #fff;
+    border-radius: 8px;
+}
+
+.order-details button {
+    width: fit-content;
+    align-self: center;
+    width: 35%;
+}
+
+.order-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.order-field span {
+    color: #333;
+    font-weight: 500;
+}
+
+.order-field strong {
+    font-weight: 700;
+    color: var(--text);
+}

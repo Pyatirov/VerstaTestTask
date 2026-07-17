@@ -361,3 +361,19 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# .NET
+bin/
+obj/
+*.user
+.vs/
+
+# SQLite DB
+*.db
+*.db-shm
+*.db-wal
+
+# Node / React
+node_modules/
+dist/
+.env

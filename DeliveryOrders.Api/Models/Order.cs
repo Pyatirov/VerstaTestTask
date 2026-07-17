@@ -29,5 +29,5 @@ public class Order
     [Required]
     public DateTime PickupDate { get; set; }
 
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
 }
